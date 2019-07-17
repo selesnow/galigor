@@ -1,8 +1,8 @@
 Package: galigoR
-Title: Easily Install and Load Select Packages
+Title: Collection Of Packages For Internet Marketing
 Version: 0.0.1
 Authors@R: c(
-    person("Michael Wayne", "Kearney", , email = "mike.wayne.kearney@gmail.com", role = c("aut", "cre"))
+    person("Alexey Seleznev", "Netpeak", , email = "selesnow@gmail.com", role = c("aut", "cre"))
   )
 Description: The 'galigoRverse' is selection of packages designed to be loaded
     in concert. The purpose of this package is to make it easy to install and 
