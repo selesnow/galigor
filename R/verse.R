@@ -1,4 +1,4 @@
-core <- c("ryandexdirect", "rmytarget", "rfacebookstat", "rvkstat", "rym")
+core <- c("ryandexdirect", "rfacebookstat", "rvkstat", "rmytarget", "rym", "getProxy")
 
 core_loaded <- function() {
   search <- paste0("package:", core)
@@ -10,7 +10,7 @@ core_unloaded <- function() {
 }
 
 
-galigoR_attach <- function() {
+galigor_attach <- function() {
   to_load <- core_unloaded()
   if (length(to_load) == 0)
     return(invisible())
@@ -18,7 +18,7 @@ galigoR_attach <- function() {
   msg(
     cli::rule(
       left = crayon::bold("Attaching packages"),
-      right = paste0("galigoR ", package_version("galigoR"))
+      right = paste0("galigor ", package_version("galigor"))
     ),
     startup = TRUE
   )
@@ -53,9 +53,9 @@ package_version <- function(x) {
   paste0(version, collapse = ".")
 }
 
-#' Conflicts between the galigoR and other packages
+#' Conflicts between the galigor and other packages
 #'
-#' This function lists all the conflicts between packages in the galigoR
+#' This function lists all the conflicts between packages in the galigor
 #' and other packages that you have loaded.
 #'
 #' If dplyr is one of the select packages, then the following four conflicts
@@ -65,28 +65,28 @@ package_version <- function(x) {
 #'
 #' @export
 #' @examples
-#' galigoR_conflicts()
-galigoR_conflicts <- function() {
+#' galigor_conflicts()
+galigor_conflicts <- function() {
   envs <- purrr::set_names(search())
   objs <- invert(lapply(envs, ls_env))
 
   conflicts <- purrr::keep(objs, ~ length(.x) > 1)
 
-  pkg_names <- paste0("package:", galigoR_packages())
+  pkg_names <- paste0("package:", galigor_packages())
   conflicts <- purrr::keep(conflicts, ~ any(.x %in% pkg_names))
 
   conflict_funs <- purrr::imap(conflicts, confirm_conflict)
   conflict_funs <- purrr::compact(conflict_funs)
 
-  structure(conflict_funs, class = "galigoR_conflicts")
+  structure(conflict_funs, class = "galigor_conflicts")
 }
 
-galigoR_conflict_message <- function(x) {
+galigor_conflict_message <- function(x) {
   if (length(x) == 0) return("")
 
   header <- cli::rule(
     left = crayon::bold("Conflicts"),
-    right = "galigoR_conflicts()"
+    right = "galigor_conflicts()"
   )
 
   pkgs <- x %>% purrr::map(~ gsub("^package:", "", .))
@@ -108,8 +108,8 @@ galigoR_conflict_message <- function(x) {
 }
 
 #' @export
-print.galigoR_conflicts <- function(x, ..., startup = FALSE) {
-  cli::cat_line(galigoR_conflict_message(x))
+print.galigor_conflicts <- function(x, ..., startup = FALSE) {
+  cli::cat_line(galigor_conflict_message(x))
 }
 
 #' @importFrom magrittr %>%
@@ -139,26 +139,26 @@ ls_env <- function(env) {
   x
 }
 
-#' Update galigoR packages
+#' Update galigor packages
 #'
-#' This will check to see if all galigoR packages (and optionally, their
+#' This will check to see if all galigor packages (and optionally, their
 #' dependencies) are up-to-date, and will install after an interactive
 #' confirmation.
 #'
 #' @param recursive If \code{TRUE}, will also check all dependencies of
-#'   galigoR packages.
+#'   galigor packages.
 #' @export
 #' @examples
 #' \dontrun{
-#' galigoR_update()
+#' galigor_update()
 #' }
-galigoR_update <- function(recursive = FALSE) {
+galigor_update <- function(recursive = FALSE) {
 
-  deps <- galigoR_deps(recursive)
+  deps <- galigor_deps(recursive)
   behind <- dplyr::filter(deps, behind)
 
   if (nrow(behind) == 0) {
-    cli::cat_line("All galigoR packages up-to-date")
+    cli::cat_line("All galigor packages up-to-date")
     return(invisible())
   }
 
@@ -176,14 +176,14 @@ galigoR_update <- function(recursive = FALSE) {
   invisible()
 }
 
-#' List all galigoR dependencies
+#' List all galigor dependencies
 #'
 #' @param recursive If \code{TRUE}, will also list all dependencies of
-#'   galigoR packages.
+#'   galigor packages.
 #' @export
-galigoR_deps <- function(recursive = FALSE) {
+galigor_deps <- function(recursive = FALSE) {
   pkgs <- utils::available.packages()
-  deps <- tools::package_dependencies("galigoR", pkgs, recursive = recursive)
+  deps <- tools::package_dependencies("galigor", pkgs, recursive = recursive)
 
   pkg_deps <- unique(sort(unlist(deps)))
 
@@ -227,20 +227,20 @@ text_col <- function(x) {
 
 }
 
-#' List all packages in the galigoR
+#' List all packages in the galigor
 #'
-#' @param include_self Include galigoR in the list?
+#' @param include_self Include galigor in the list?
 #' @export
 #' @examples
-#' galigoR_packages()
-galigoR_packages <- function(include_self = TRUE) {
-  raw <- utils::packageDescription("galigoR")$Imports
+#' galigor_packages()
+galigor_packages <- function(include_self = TRUE) {
+  raw <- utils::packageDescription("galigor")$Imports
   imports <- strsplit(raw, ",")[[1]]
   parsed <- gsub("^\\s+|\\s+$", "", imports)
   names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
 
   if (include_self) {
-    names <- c(names, "galigoR")
+    names <- c(names, "galigor")
   }
 
   names
@@ -266,11 +266,11 @@ style_grey <- function(level, ...) {
     return()
 
   crayon::num_colors(TRUE)
-  galigoR_attach()
+  galigor_attach()
 
   if (!"package:conflicted" %in% search()) {
-    x <- galigoR_conflicts()
-    msg(galigoR_conflict_message(x), startup = TRUE)
+    x <- galigor_conflicts()
+    msg(galigor_conflict_message(x), startup = TRUE)
   }
 
 }

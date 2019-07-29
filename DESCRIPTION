@@ -1,14 +1,16 @@
-Package: galigoR
-Title: Collection Of Packages For Internet Marketing
+Package: galigor
+Title: Collection of Packages For Internet Marketing
 Version: 0.0.1
 Authors@R: c(
     person("Alexey Seleznev", "Netpeak", , email = "selesnow@gmail.com", role = c("aut", "cre"))
   )
-Description: The 'galigoRverse' is selection of packages designed to be loaded
-    in concert. The purpose of this package is to make it easy to install and 
-    subsequently load those packages.
+Author: Alexey Seleznev [aut, cre]
+Maintainer: Alexey Seleznev <selesnow@gmail.com>
+Description: Collection of packages for work with API 'Yandex Direct',
+    'Yandex Metrica', 'MyTarget', 'Vkontakte' and 'Facebook'. This packages 
+	allows you loading data from ads account and manage your ads materials.
 Depends: 
-    R (>= 3.1)
+    R (>= 3.5)
 Imports: 
     cli (>= 1.0.0),
     crayon (>= 1.3.4),
@@ -17,10 +19,14 @@ Imports:
     rstudioapi (>= 0.7),
     tibble (>= 1.4.2),
     ryandexdirect,
-    rmytarget,
     rfacebookstat,
     rvkstat,
-    rym
+    rmytarget,
+    rym,
+    getProxy
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat
+License: MIT + file LICENSE
