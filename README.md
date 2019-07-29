@@ -16,9 +16,8 @@
 
 ## Установка библиотеки
 
-На данный момент библиотеку `galigor` можно установить только из GitHub с помощью команды `devtools::install_github("selesnow/galigor")`.
-
-Но сейчас `galigor` находится на модерации у команды CRAN, и в ближайшее время она будет доступа для загрузки из основного репозитория языка R.
+Вы можете установить основную версию библиотеку `galigor` из CRAN с помощью команды `install.packages("galigor")`.
+Либо dev версию из GitHub с помощью команды `devtools::install_github("selesnow/galigor")`
 
 ## Документация
 
@@ -72,9 +71,13 @@
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rvkstat)](http://www.rdocumentation.org/packages/rvkstat)
 
+[![rpackages.io rank](http://www.rpackages.io/badge/rvkstat.svg)](http://www.rpackages.io/package/rvkstat)
+
 [![](https://cranlogs.r-pkg.org/badges/rvkstat)](https://cran.r-project.org/package=rvkstat)
 
-<Br>
+
+
+
 
 ### rfacebookstat<a href='https://selesnow.github.io/rfacebookstat'><img src='https://raw.githubusercontent.com/selesnow/rfacebookstat/master/inst/logo/rfacebookstat.png' align="right" height="139" /></a>
 
