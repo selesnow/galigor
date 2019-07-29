@@ -14,6 +14,11 @@
 * `rym` - Пакет для работы с API Яндекс.Метрики;
 * `getProxy` - Пакет позволяющий обходить блокировку API перенаправляя интернет соединение через бесплатные proxy сервера.
 
+## Установка библиотеки
+
+Вы можете установить основную версию библиотеку `galigor` из CRAN с помощью команды `install.packages("galigor")`.
+Либо dev версию из GitHub с помощью команды `devtools::install_github("selesnow/galligor")`
+
 ## Документация
 
 Каждый пакет имеет официальную русскоязычную документацию, а так же внутреннюю документацию на английском языке. Ниже приведены ссылки на документации к каждому из перечисленных пактеов.
@@ -38,63 +43,56 @@
 * [getProxy](https://github.com/selesnow/getProxy/issues)
  
 ## Ссылки
-1. [Телеграмм канал R4marketing](https://t.me/R4marketing).
-2. [Группа в Вконтакте](https://vk.com/data_club).
-3. [Сайт пакетов составляющих ядро galigor](https://github.com/selesnow/)
+
+1. [Сайт пакетов составляющих ядро galigor](https://github.com/selesnow/)
+2. [Статья о безопасности использования пакетов входязих в библиотеку galigor](https://habr.com/post/430888/)
 
 ## Бейджи galigor
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/galigor)](http://www.rdocumentation.org/packages/galigor)
-[![rpackages.io rank](http://www.rpackages.io/badge/galigor.svg)]()
 [![](https://cranlogs.r-pkg.org/badges/galigor)](https://cran.r-project.org/package=galigor)
 
 ## Бейджи пакетов входящих в библиотеку galigor
 
-### yandexdirect <a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
+### yandexdirect<a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/ryandexdirect)](http://www.rdocumentation.org/packages/ryandexdirect)
 [![rpackages.io rank](http://www.rpackages.io/badge/ryandexdirect.svg)](http://www.rpackages.io/package/ryandexdirect)
 [![](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
 
-### rvkstat <a href='https:/selesnow.github.io/rvkstat'><img src='https://raw.githubusercontent.com/selesnow/rvkstat/master/inst/logo/rvkstat.png' align="right" height="139" /></a>
+### rvkstat<a href='https:/selesnow.github.io/rvkstat'><img src='https://raw.githubusercontent.com/selesnow/rvkstat/master/inst/logo/rvkstat.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rvkstat)](http://www.rdocumentation.org/packages/rvkstat)
-[![rpackages.io rank](http://www.rpackages.io/badge/rvkstat.svg)]()
 [![](https://cranlogs.r-pkg.org/badges/rvkstat)](https://cran.r-project.org/package=rvkstat)
 
-### rfacebookstat <a href='https://selesnow.github.io/rfacebookstat'><img src='https://raw.githubusercontent.com/selesnow/rfacebookstat/master/inst/logo/rfacebookstat.png' align="right" height="139" /></a>
+### rfacebookstat<a href='https://selesnow.github.io/rfacebookstat'><img src='https://raw.githubusercontent.com/selesnow/rfacebookstat/master/inst/logo/rfacebookstat.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rfacebookstat)](http://www.rdocumentation.org/packages/rfacebookstat)
 [![rpackages.io rank](http://www.rpackages.io/badge/rfacebookstat.svg)](http://www.rpackages.io/package/rfacebookstat)
 [![](https://cranlogs.r-pkg.org/badges/rfacebookstat)](https://cran.r-project.org/package=rfacebookstat)
 
-### rmytarget <a href='https://selesnow.github.io/rmytarget'><img src='https://raw.githubusercontent.com/selesnow/rmytarget/master/inst/logo/rmytarget.png' align="right" height="139" /></a>
+### rmytarget<a href='https://selesnow.github.io/rmytarget'><img src='https://raw.githubusercontent.com/selesnow/rmytarget/master/inst/logo/rmytarget.png' align="right" height="139" /></a>
 *Пакет для загрузки статистики по рекламным кампаниям в системе MyTarget.*
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rmytarget)](http://www.rdocumentation.org/packages/rmytarget)
 [![rpackages.io rank](http://www.rpackages.io/badge/rmytarget.svg)](http://www.rpackages.io/package/rmytarget)
 [![](https://cranlogs.r-pkg.org/badges/rmytarget)](https://cran.r-project.org/package=rmytarget)
 
-### rym <a href='https://selesnow.github.io/rym'><img src='https://raw.githubusercontent.com/selesnow/rym/master/inst/logo/rym.png' align="right" height="139" /></a>
+### rym<a href='https://selesnow.github.io/rym'><img src='https://raw.githubusercontent.com/selesnow/rym/master/inst/logo/rym.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rym)](http://www.rdocumentation.org/packages/rym)
 [![rpackages.io rank](http://www.rpackages.io/badge/rym.svg)](http://www.rpackages.io/package/rym)
 [![](https://cranlogs.r-pkg.org/badges/rym)](https://cran.r-project.org/package=rym)
 
-### getProxy <a href='https://selesnow.github.io/getProxy'><img src='https://raw.githubusercontent.com/selesnow/getProxy/master/inst/logo/getProxy.png' align="right" height="139" /></a>
+### getProxy<a href='https://selesnow.github.io/getProxy'><img src='https://raw.githubusercontent.com/selesnow/getProxy/master/inst/logo/getProxy.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/getProxy)](http://www.rdocumentation.org/packages/getProxy)
 [![rpackages.io rank](http://www.rpackages.io/badge/getProxy.svg)](http://www.rpackages.io/package/getProxy)
 [![](https://cranlogs.r-pkg.org/badges/getProxy)](https://cran.r-project.org/package=getProxy)
 
-### Автор пакета
+### Автор библиотеки
 Алексей Селезнёв, Head of analytics dept. at [Netpeak](https://netpeak.net)
 <Br>email: selesnow@gmail.com
 <Br>skype: selesnow
 <Br>facebook: [facebook.com/selesnow](https://facebook.com/selesnow)
 <Br>blog: [alexeyseleznev.wordpress.com](https://alexeyseleznev.wordpress.com/)
-
-### Бейджи
-[![Rdoc](http://www.rdocumentation.org/badges/version/ryandexdirect)](http://www.rdocumentation.org/packages/ryandexdirect)
-[![rpackages.io rank](http://www.rpackages.io/badge/ryandexdirect.svg)](http://www.rpackages.io/package/ryandexdirect)
-[![](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
