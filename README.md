@@ -1,168 +1,91 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ryandexdirect - пакет для работы с API Яндекс.Директ версии 4, Live 4 и 5. <a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
+# galigor - библиотека R пакетов для интернет - маркетинга. <a href='https:/selesnow.github.io/galigor'><img src='https://raw.githubusercontent.com/selesnow/galigor/master/inst/logo/galigor.png' align="right" height="139" /></a>
 
 ## Краткое описание.
 
-Пакет ryandexdirect предназначен для загрузки данных из Яндекс Директ в R, с помощью функций данного пакета вы можете работать с перечисленными ниже сервисами и службами API Яндекса с помощью готовых функций, не углубляясь при этом в документацию по работе с этими API сервисами.
+На данный момент ядро библиотеки `galigor` состоит из 6 пакетов:
 
-+ [Сервис Reports](https://tech.yandex.ru/direct/doc/reports/reports-docpage/) - Предназначен для получения статистики по аккаунту рекламодателя.
-+ [API Директа версии 4 и Live 4](https://tech.yandex.ru/direct/doc/dg-v4/concepts/About-docpage/) - Через API внешние приложения добавляют и редактируют кампании, объявления, фразы, задают ставки, получают статистику показов.
-+ [API Директа версии 5](https://tech.yandex.ru/direct/doc/dg/concepts/about-docpage/) - Через API внешние приложения добавляют и редактируют кампании, объявления, фразы, задают ставки, получают статистику показов.
+* `ryandexdirect` - Пакет для работы с API Яндекс.Директ;
+* `rvkstat` - Пакет для работы с API Вконтакте;
+* `rfacebookstat` - Пакет для работы с API Facebook;
+* `rmytarget` - Пакет для работы с API MyTagret;
+* `rym` - Пакет для работы с API Яндекс.Метрики;
+* `getProxy` - Пакет позволяющий обходить блокировку API перенаправляя интернет соединение через бесплатные proxy сервера.
 
-Пакет позволяет вам выполнять следующие действия:
+## Документация
 
-1. Авторизовываться в API.
-2. Получать список различных объектов рекламного кабинета, рекламных кампаний, групп объявлений, объявлений, для агентских аккаунтов можно запрашивать список клиентов, и параметры каждого клиента.
-3. Управлять показами на уровне рекламных кампаний, групп объявлений и объявлений.
-4. Загружать статистику.
-5. Упаравлять ставками ключевых слов и автотаргетингов.
+Каждый пакет имеет официальную русскоязычную документацию, а так же внутреннюю документацию на английском языке. Ниже приведены ссылки на документации к каждому из перечисленных пактеов.
 
-## Установка пакета ryandexdirect.
+* [ryandexdirect](https://selesnow.github.io/ryandexdirect)
+* [rvkstat](https://selesnow.github.io/rvkstat)
+* [rfacebookstat](https://selesnow.github.io/rfacebookstat)
+* [rmytarget](https://selesnow.github.io/rmytarget)
+* [rym](https://selesnow.github.io/rym)
+* [getProxy](https://selesnow.github.io/getProxy)
 
-Установка пакета осуществляется из репозитория CRAN 
+## Отчёты об ошибках и предложения по улучшению библиотеки
 
-`install.packages("ryandexdirect")`
+Общие вопросы по библиотеке `galigor` можно задавать по [ссылке](https://github.com/selesnow/galigor/issues). 
+Вопросы по какому либо отдельному пакету необходимо задавать в репозитории самого пакета, ссылки на баг репорты по каждому пакету приведены ниже:
 
-или GitHub, для этого сначала требуется установить и подключить пакет devtools.
+* [ryandexdirect](https://github.com/selesnow/ryandexdirect/issues)
+* [rvkstat](https://github.com/selesnow/rvkstat/issues)
+* [rfacebookstat](https://github.com/selesnow/rfacebookstat/issues)
+* [rmytarget](https://github.com/selesnow/rmytarget/issues)
+* [rym](https://github.com/selesnow/rym/issues)
+* [getProxy](https://github.com/selesnow/getProxy/issues)
+ 
+## Ссылки
+1. [Телеграмм канал R4marketing](https://t.me/R4marketing).
+2. [Группа в Вконтакте](https://vk.com/data_club).
+3. [Сайт пакетов составляющих ядро galigor](https://github.com/selesnow/)
 
-`install.packages("devtools")`
+## Бейджи galigor
 
-`library(devtools)`
+[![Rdoc](http://www.rdocumentation.org/badges/version/galigor)](http://www.rdocumentation.org/packages/galigor)
+[![rpackages.io rank](http://www.rpackages.io/badge/galigor.svg)]()
+[![](https://cranlogs.r-pkg.org/badges/galigor)](https://cran.r-project.org/package=galigor)
 
-После чего можно устанавливать пакет ryandexdirect.
+## Бейджи пакетов входящих в библиотеку galigor
 
-`install_github('selesnow/ryandexdirect')`
+### yandexdirect <a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
 
-### Пример кода
-```r
-# Установка пакетов
-install.packages("ryandexdirect")
+[![Rdoc](http://www.rdocumentation.org/badges/version/ryandexdirect)](http://www.rdocumentation.org/packages/ryandexdirect)
+[![rpackages.io rank](http://www.rpackages.io/badge/ryandexdirect.svg)](http://www.rpackages.io/package/ryandexdirect)
+[![](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
 
-# Подключение пакета
-library(ryandexdirect)
+### rvkstat <a href='https:/selesnow.github.io/rvkstat'><img src='https://raw.githubusercontent.com/selesnow/rvkstat/master/inst/logo/rvkstat.png' align="right" height="139" /></a>
 
-# Авторизация 
-yadirAuth(Login     = "my_yandex_login",  # логин пользователя Яндекс.Директ
-          TokenPath = "C:/direct/tokens") # путь к папаке в которой будет храниться файл с учётными данными
-	  
-# ###################################################
-# Загрузка различных объектов из рекламного аккаунта
-# ###################################################
+[![Rdoc](http://www.rdocumentation.org/badges/version/rvkstat)](http://www.rdocumentation.org/packages/rvkstat)
+[![rpackages.io rank](http://www.rpackages.io/badge/rvkstat.svg)]()
+[![](https://cranlogs.r-pkg.org/badges/rvkstat)](https://cran.r-project.org/package=rvkstat)
 
-# Список рекламных кампаний
-camp <- yadirGetCampaign(Logins    = "my_yandex_login",
-                         TokenPath = "C:/direct/tokens",
-                         States    = "ON",
-                         Types     = "TEXT_CAMPAIGN")
+### rfacebookstat <a href='https://selesnow.github.io/rfacebookstat'><img src='https://raw.githubusercontent.com/selesnow/rfacebookstat/master/inst/logo/rfacebookstat.png' align="right" height="139" /></a>
 
-# Список ключевых слов
-kw <- yadirGetKeyWords(Login       = "my_yandex_login",
-                       TokenPath   = "C:/direct/tokens",
-                       CampaignIds = camp$Id[1:5],
-                       States      = "ON")
+[![Rdoc](http://www.rdocumentation.org/badges/version/rfacebookstat)](http://www.rdocumentation.org/packages/rfacebookstat)
+[![rpackages.io rank](http://www.rpackages.io/badge/rfacebookstat.svg)](http://www.rpackages.io/package/rfacebookstat)
+[![](https://cranlogs.r-pkg.org/badges/rfacebookstat)](https://cran.r-project.org/package=rfacebookstat)
 
-# Список групп объявлений
-adgroups <- yadirGetAdGroups(Login       = "my_yandex_login",
-                             TokenPath   = "C:/direct/tokens",
-                             CampaignIds = camp$Id[c(1,2)],
-                             Types       = "TEXT_AD_GROUP",
-                             Statuses    = c("ACCEPTED", "MODERATION"))
+### rmytarget <a href='https://selesnow.github.io/rmytarget'><img src='https://raw.githubusercontent.com/selesnow/rmytarget/master/inst/logo/rmytarget.png' align="right" height="139" /></a>
+*Пакет для загрузки статистики по рекламным кампаниям в системе MyTarget.*
 
-# Список объявлений
-ads <- yadirGetAds(Login       = "my_yandex_login",
-                   TokenPath   = "C:/direct/tokens",
-                   CampaignIds = camp$Id[c(1,2)])
+[![Rdoc](http://www.rdocumentation.org/badges/version/rmytarget)](http://www.rdocumentation.org/packages/rmytarget)
+[![rpackages.io rank](http://www.rpackages.io/badge/rmytarget.svg)](http://www.rpackages.io/package/rmytarget)
+[![](https://cranlogs.r-pkg.org/badges/rmytarget)](https://cran.r-project.org/package=rmytarget)
 
-# Список быстрых ссылок 
-links <- yadirGetSiteLinks(Login       = "my_yandex_login",
-                           TokenPath   = "C:/direct/tokens")
+### rym <a href='https://selesnow.github.io/rym'><img src='https://raw.githubusercontent.com/selesnow/rym/master/inst/logo/rym.png' align="right" height="139" /></a>
 
-# ###################################################
-# Загрузка справочной информации
-# ###################################################
+[![Rdoc](http://www.rdocumentation.org/badges/version/rym)](http://www.rdocumentation.org/packages/rym)
+[![rpackages.io rank](http://www.rpackages.io/badge/rym.svg)](http://www.rpackages.io/package/rym)
+[![](https://cranlogs.r-pkg.org/badges/rym)](https://cran.r-project.org/package=rym)
 
-# Справочник валют
-currency <- yadirGetDictionary(DictionaryName = "Currencies",
-                               Language       = "en",
-                               Login          = "my_yandex_login",
-                               TokenPath      = "C:/direct/tokens")
+### getProxy <a href='https://selesnow.github.io/getProxy'><img src='https://raw.githubusercontent.com/selesnow/getProxy/master/inst/logo/getProxy.png' align="right" height="139" /></a>
 
-# Георгафический справочник
-regions <- yadirGetDictionary(DictionaryName = "GeoRegions",
-                              Language       = "ru",
-                              Login          = "my_yandex_login",
-                              TokenPath      = "C:/direct/tokens")
-
-# ###################################################
-# Загрузка статистики
-# ###################################################
-
-# простейший отчёт за прошлый месяц
-simple_report <- yadirGetReport(DateRangeType = "LAST_MONTH",  # относительный период
-                                FieldNames    = c("Date", "Clicks", "Impressions"),
-                                Login         = "my_yandex_login",
-                                TokenPath     = "C:/direct/tokens")
-
-# отчёт по конверсиям с моделью аттрибуции за статичный период
-attribution_report <- yadirGetReport(DateFrom          = "2018-11-15", # статичный период, дата начала
-                                     DateTo            = "2018-11-20", # статичный период, дата завершения
-                                     FieldNames        = c("Date", 
-                                                           "Conversions"),
-                                     Goals             = c(27475434, 38234732),
-                                     AttributionModels = c("LC", "FC"),
-                                     Login             = "my_yandex_login",
-                                     TokenPath         = "C:/direct/tokens")
-
-# отчёт с применением фильтрации
-filtring_report <- yadirGetReport(DateRangeType = "LAST_30_DAYS",
-                                  FieldNames    = c("Date", "Clicks", "Impressions"),
-                                  FilterList    = c("Conversions GREATER_THAN 1", 
-                                                    "Impressions LESS_THAN 3500"),
-                                  Login         = "my_yandex_login",
-                                  TokenPath     = "C:/direct/tokens")
-
-# ###################################################
-# Управление ставками
-# ###################################################
-
-# запрашиваем ставки
-bids  <- yadirGetKeyWordsBids(kw$Id)
-
-# запрашиваем ставки и данные торго на поиске
-bids_search <- yadirGetKeyWordsBids(kw$Id,
-                                    AuctionBids = "search")
-                                    
-# запрашиваем ставки и данные торго в сетях
-network_bids <- yadirGetKeyWordsBids(kw$Id,
-                                     AuctionBids = "network")
-
-# запрашиваем список рекламных кампаний
-camp <- yadirGetCampaign()
-
-# меняем ставки
-setbid     <- yadirSetKeyWordsBids(CampaignIds = camp$Id[1],
-                                   SearchBid   = 9)
-
-# меняем ставки
-autosetbids <- yadirSetAutoKeyWordsBids(KeywordIds = kw$Id,
-                                        TargetTrafficVolume = 50)
-```
-
-### Виньетки
-Пакет имеет подробные виньетки отдельно по каждой из своих возможностей, в которой наиболее подробно описаны детали работы с его функционалом. На данный момент в пакете `ryandexdirect` доступны 3 виньетки.
-
-1. Загрзка статистики из API Яндекс Директ: `vignette("yandex-direct-get-statistic", package = "ryandexdirect")`
-2. Авторизация и работа с учётными данными: `vignette("yandex-direct-auth", package = "ryandexdirect")`
-3. Управление ставками ключевых слов в Яндекс Директ: `vignette("yandex-direct-keyword-bids", package = "ryandexdirect")`
-
-### Ссылки
-1. [Полная, официальная документация по работе с пакетом ryandexdirect](https://selesnow.github.io/ryandexdirect/).
-2. Баг репорты, предложения по доработке и улучшению функционала ryandexdirect оставлять [тут](https://github.com/selesnow/ryandexdirect/issues). 
-3. [Список релизов](https://github.com/selesnow/ryandexdirect/releases).
-4. [Телеграмм канал R4marketing](https://t.me/R4marketing).
-5. [Группа в Вконтакте](https://vk.com/data_club).
+[![Rdoc](http://www.rdocumentation.org/badges/version/getProxy)](http://www.rdocumentation.org/packages/getProxy)
+[![rpackages.io rank](http://www.rpackages.io/badge/getProxy.svg)](http://www.rpackages.io/package/getProxy)
+[![](https://cranlogs.r-pkg.org/badges/getProxy)](https://cran.r-project.org/package=getProxy)
 
 ### Автор пакета
 Алексей Селезнёв, Head of analytics dept. at [Netpeak](https://netpeak.net)
