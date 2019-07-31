@@ -73,9 +73,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/rvkstat)](https://cran.r-project.org/package=rvkstat)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rvkstat?color=lightgrey)](https://cran.r-project.org/web/packages/rvkstat/index.html)
 
 ### rfacebookstat<a href='https://selesnow.github.io/rfacebookstat'><img src='https://raw.githubusercontent.com/selesnow/rfacebookstat/master/inst/logo/rfacebookstat.png' align="right" height="139" /></a>
 
@@ -85,9 +83,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/rfacebookstat)](https://cran.r-project.org/package=rfacebookstat)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rfacebookstat?color=lightgrey)](https://cran.r-project.org/web/packages/rfacebookstat/index.html)
 
 ### rmytarget<a href='https://selesnow.github.io/rmytarget'><img src='https://raw.githubusercontent.com/selesnow/rmytarget/master/inst/logo/rmytarget.png' align="right" height="139" /></a>
 
@@ -97,9 +93,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/rmytarget)](https://cran.r-project.org/package=rmytarget)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rmytarget?color=lightgrey)](https://cran.r-project.org/web/packages/rmytarget/index.html)
 
 ### rym<a href='https://selesnow.github.io/rym'><img src='https://raw.githubusercontent.com/selesnow/rym/master/inst/logo/rym.png' align="right" height="139" /></a>
 
@@ -109,9 +103,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/rym)](https://cran.r-project.org/package=rym)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/rym?color=lightgrey)](https://cran.r-project.org/web/packages/rym/index.html)
 
 ### getProxy<a href='https://selesnow.github.io/getProxy'><img src='https://raw.githubusercontent.com/selesnow/getProxy/master/inst/logo/getProxy.png' align="right" height="139" /></a>
 
@@ -121,9 +113,7 @@
 
 [![](https://cranlogs.r-pkg.org/badges/getProxy)](https://cran.r-project.org/package=getProxy)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/getProxy?color=lightgrey)](https://cran.r-project.org/web/packages/getProxy/index.html)
 
 ### Автор библиотеки
 Алексей Селезнёв, Head of analytics dept. at [Netpeak](https://netpeak.net)
