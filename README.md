@@ -53,6 +53,8 @@
 
 [![](https://cranlogs.r-pkg.org/badges/galigor)](https://cran.r-project.org/package=galigor)
 
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/galigor?color=lightgrey)](https://cran.r-project.org/web/packages/galigor/index.html)
+
 ## Бейджи пакетов входящих в библиотеку galigor
 
 ### ryandexdirect<a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
