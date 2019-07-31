@@ -61,11 +61,9 @@
 
 [![rpackages.io rank](http://www.rpackages.io/badge/ryandexdirect.svg)](http://www.rpackages.io/package/ryandexdirect)
 
-[![](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
+[![Last Month Cran Downloads](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
 
-
-
-
+[![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/ryandexdirect)](https://cran.r-project.org/web/packages/ryandexdirect/index.html)
 
 ### rvkstat<a href='https:/selesnow.github.io/rvkstat'><img src='https://raw.githubusercontent.com/selesnow/rvkstat/master/inst/logo/rvkstat.png' align="right" height="139" /></a>
 
