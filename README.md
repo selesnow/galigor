@@ -54,8 +54,6 @@
 
 ## Бейджи galigor
 
-[![Rdoc](http://www.rdocumentation.org/badges/version/galigor)](http://www.rdocumentation.org/packages/galigor)
-
 [![](https://cranlogs.r-pkg.org/badges/galigor)](https://cran.r-project.org/package=galigor)
 
 [![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/galigor?color=lightgrey)](https://cran.r-project.org/web/packages/galigor/index.html)
@@ -74,10 +72,6 @@
 
 
 ### ryandexdirect<a href='https:/selesnow.github.io/ryandexdirect'><img src='https://raw.githubusercontent.com/selesnow/ryandexdirect/master/inst/ryandexdirect.png' align="right" height="139" /></a>
-
-[![Rdoc](http://www.rdocumentation.org/badges/version/ryandexdirect)](http://www.rdocumentation.org/packages/ryandexdirect)
-
-[![rpackages.io rank](http://www.rpackages.io/badge/ryandexdirect.svg)](http://www.rpackages.io/package/ryandexdirect)
 
 [![Last Month Cran Downloads](https://cranlogs.r-pkg.org/badges/ryandexdirect)](https://cran.r-project.org/package=ryandexdirect)
 
