@@ -1,4 +1,4 @@
-core <- c("ryandexdirect", "rfacebookstat", "rvkstat", "rmytarget", "rym", "getProxy")
+core <- c("rgoogleads", "ryandexdirect", "rfacebookstat", "rvkstat", "rmytarget", "rym", "rappsflyer", "getProxy")
 
 core_loaded <- function() {
   search <- paste0("package:", core)
