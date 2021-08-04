@@ -77,6 +77,8 @@
 
 [![Total Cran Downloads](https://cranlogs.r-pkg.org/badges/grand-total/ryandexdirect?color=lightgrey)](https://cran.r-project.org/web/packages/ryandexdirect/index.html)
 
+<Br><Br><Br>
+
 ### rvkstat<a href='https:/selesnow.github.io/rvkstat'><img src='https://raw.githubusercontent.com/selesnow/rvkstat/master/inst/logo/rvkstat.png' align="right" height="139" /></a>
 
 [![Rdoc](http://www.rdocumentation.org/badges/version/rvkstat)](http://www.rdocumentation.org/packages/rvkstat)
