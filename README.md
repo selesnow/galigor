@@ -18,7 +18,10 @@
 
 ## Установка библиотеки
 
-Вы можете установить библиотеку `galigor` с помощью команды `devtools::install_github("selesnow/galigor")`.
+Вы можете установить библиотеку `galigor` с GitHub или CRAN:
+
+* установка с CRAN: `install.packages("galigor")`
+* установка с GitHub: `devtools::install_github("selesnow/galigor")`.
 
 ## Документация
 
